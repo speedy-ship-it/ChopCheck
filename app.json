@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Chop Check",
+    "slug": "chop-check",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F172A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.chopcheck.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera is used to scan VINs and identify vehicles at crash scenes.",
+        "NSPhotoLibraryUsageDescription": "Photo library access is used to identify vehicles from photos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F172A"
+      },
+      "package": "com.chopcheck.app",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Camera is used to scan VINs and identify vehicles at crash scenes."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "chop-check-app"
+      }
+    }
+  }
+}
