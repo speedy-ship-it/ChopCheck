@@ -36,8 +36,9 @@
       ]
     ],
     "web": {
-      "favicon": "./assets/icon.png",
-      "bundler": "metro"
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/icon.png"
     },
     "extra": {
       "eas": {
