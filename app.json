@@ -35,6 +35,10 @@
         }
       ]
     ],
+    "web": {
+      "favicon": "./assets/icon.png",
+      "bundler": "metro"
+    },
     "extra": {
       "eas": {
         "projectId": "chop-check-app"

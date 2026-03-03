@@ -1,0 +1,13 @@
+{
+  "name": "ChopCheck",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "forwardPorts": [8081],
+  "portsAttributes": {
+    "8081": {
+      "label": "Expo Web",
+      "onAutoForward": "openBrowserOnce",
+      "visibility": "public"
+    }
+  },
+  "postCreateCommand": "npm install --legacy-peer-deps"
+}
